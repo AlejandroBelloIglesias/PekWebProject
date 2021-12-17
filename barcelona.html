@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+  
+   <head>
+      <meta charset="utf-8">
+      <title>Pek WebPage</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <script>
+         function setContinentText(txt) {
+             document.getElementById("continent").innerHTML = txt;
+           }
+      </script>
+   </head>
+
+
+   <body id="body" class="bg">
+
+      <!-- navbar -->
+      <div class="sticky-top" snippet="navbar.html"></div>
+
+      
+      <div class="jumbotron jumbotron-fluid text-center fg-3">
+         <h1>Barcelona</h1>
+          <div class="mx-auto d-block">
+            <img class="rounded" src="images/Barcelona/escudo.png"/>
+         </div>
+         <p>Barcelona Condal city, is the capital of the autonomous community of Cataluña. It´s the second most populated city of Spain, and the sixth of the European Union … Thanks to the privileged territorial situation of Barcelona, located on the shores of the Mediterranean Sea, we enjoy a warm and pleasant climate throughout the year.</p>
+      </div>
+
+      <div style="height: 100px"></div>
+
+      <section class="section fg-2">
+         <div class="text-center">
+            <h1 class="font-weight-bold mb-4 font-size-60">Gallery of Barcelona city</h1>
+            <p class="mb-4">Here you can see some images from Barcelona</p>
+         </div>
+             <div class="row">
+                <div class="col-sm-6 col-md-4" style="margin-bottom: 30px">
+                    <img class="img-fluid" src="images/Barcelona/campnou.jpg" alt="Estadio Camp Nou"/> 
+                </div>
+                 <div class="col-sm-6 col-md-4" style="margin-bottom: 30px">
+                    <img class="img-fluid" src="images/Barcelona/montjuic.jpg" alt="Castillo Montjuic"/> 
+                </div>
+                 <div class="col-sm-6 col-md-4" style="margin-bottom: 30px">
+                    <img class="img-fluid" height="100" src="images/Barcelona/casabatlo.jpg" alt="Edificio Casa Batllo"/> 
+                </div>
+                 <div class="col-sm-6 col-md-4" style="margin-bottom: 30px">
+                    <img class="img-fluid" src="images/Barcelona/parc-guell.jpg" alt="Park Güell"/> 
+                </div>
+                <div class="col-sm-6 col-md-4" style="margin-bottom: 30px">
+                    <img class="img-fluid" src="images/Barcelona/sagradafamilia.jpg" alt="Sagrada Familia"/> 
+                </div>
+                <div class="col-sm-6 col-md-4" style="margin-bottom: 30px">
+                    <img class="img-fluid" src="images/Barcelona/larambla.jpg" alt="Las Ramblas"/> 
+                </div>
+             </div>
+      </section>
+      <!--<div class="bg"></div>-->
+      <!--
+         <div class="row mt-100">
+             <div class="col-md-12 text-center">
+                 <a href="" class="btn btn-main">Grab You Product Now</a>
+             </div>
+         </div>
+         -->
+
+      <div style="height: 100px"></div>
+
+      <div snippet="footer.html" class="mt-5"></div>
+      <!-- Importing Scripts -->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <!-- Para snippets (navbar y footer) -->
+      <script src="js/includeHTML.js"></script>
+      <script type="text/javascript">
+         // ESTO ESTÁ EN FASE DE PRUEBAS
+         /*
+         $(document).ready(function () {
+             var url = window.location;
+             
+             $('ul.nav a[href="'+ url +'"]').parent().addClass('active');
+             $('ul.nav a').filter(function() {
+                 return this.href == url;
+             }).parent().addClass('active');
+             
+         });
+         
+         var menuid = "menu-dashboard";
+         $(function() {
+             $('.nav li').removeClass('active');
+             $(menuid).addClass("active");
+         });*/
+         
+      </script> <!-- fin script dinamic active navbar item -->
+      <!-- Test map image responsive -->
+      <script src="js/jquery.rwdImageMaps.js"></script>
+      <script>
+         $('img[usemap]').rwdImageMaps();
+      </script> 
+      <script>
+         $(document).ready(function(e) {
+           $('img[usemap]').rwdImageMaps();
+         });
+      </script>
+   </body>
+
+
+</html>

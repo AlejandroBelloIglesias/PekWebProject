@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+  
+   <head>
+      <meta charset="utf-8">
+      <title>Pek WebPage</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <script>
+         function setContinentText(txt) {
+             document.getElementById("continent").innerHTML = txt;
+           }
+      </script>
+   </head>
+
+
+   <body id="body" class="bg">
+
+      <!-- navbar -->
+      <div class="sticky-top" snippet="navbar.html"></div>
+
+      
+      <div class="jumbotron jumbotron-fluid text-center fg-3">
+         <h1>Venice</h1>
+          <div class="mx-auto d-block">
+            <img class="rounded" src="images/Venice/simbVenice.png"/>
+         </div>
+         <p>Venice, also known as “The City of Canals,” is located between the mouths of the rivers Po and Pivae. It’s formed by 120 little islands connected to each other by bridges, rivers and channels, some of them of great beauty.</p>
+      </div>
+
+      <div style="height: 100px"></div>
+
+      <section class="section fg-2">
+         <div class="text-center">
+            <h1 class="font-weight-bold mb-4 font-size-60">Gallery of Venice</h1>
+            <p class="mb-4">Here you can see some images from Venice</p>
+         </div>
+             <div class="row">
+                <div class="col-sm-6 col-md-4" style="margin-bottom: 30px">
+                    <img class="img-fluid" src="images/Venice/basilicaSanMarcos.jpg" alt="Basilica San Marcos"/> 
+                </div>
+                 <div class="col-sm-6 col-md-4" style="margin-bottom: 30px">
+                    <img class="img-fluid" src="images/Venice/burano.jpg" alt="Burano"/> 
+                </div>
+                 <div class="col-sm-6 col-md-4" style="margin-bottom: 30px">
+                    <img class="img-fluid" height="100" src="images/Venice/granCanal.jpg" alt="Gran Canal"/> 
+                </div>
+                 <div class="col-sm-6 col-md-4" style="margin-bottom: 30px">
+                    <img class="img-fluid" src="images/Venice/palacioDucal(Ext).jpg" alt="Exterior Palacio Ducal"/> 
+                </div>
+                 <div class="col-sm-6 col-md-4" style="margin-bottom: 30px">
+                    <img class="img-fluid" src="images/Venice/palacioDucal(int).jpg" alt="Interior Palacio Ducal"/> 
+                </div>
+                 <div class="col-sm-6 col-md-4" style="margin-bottom: 30px">
+                    <img class="img-fluid" src="images/Venice/puenteRialto.jpg" alt="Puente Rialto"/> 
+                </div>
+             </div>
+      </section>
+      <!--<div class="bg"></div>-->
+      <!--
+         <div class="row mt-100">
+             <div class="col-md-12 text-center">
+                 <a href="" class="btn btn-main">Grab You Product Now</a>
+             </div>
+         </div>
+         -->
+
+      <div style="height: 100px"></div>
+
+      <div snippet="footer.html" class="mt-5"></div>
+      <!-- Importing Scripts -->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <!-- Para snippets (navbar y footer) -->
+      <script src="js/includeHTML.js"></script>
+      <script type="text/javascript">
+         
+      </script> <!-- fin script dinamic active navbar item -->
+      <!-- Test map image responsive -->
+      <script src="js/jquery.rwdImageMaps.js"></script>
+      <script>
+         $('img[usemap]').rwdImageMaps();
+      </script> 
+      <script>
+         $(document).ready(function(e) {
+           $('img[usemap]').rwdImageMaps();
+         });
+      </script>
+   </body>
+
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+  
+   <head>
+      <meta charset="utf-8">
+      <title>Pek WebPage</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <script>
+         function setContinentText(txt) {
+             document.getElementById("continent").innerHTML = txt;
+           }
+      </script>
+   </head>
+
+
+   <body id="body" class="bg">
+
+      <!-- navbar -->
+      <div class="sticky-top" snippet="navbar.html"></div>
+
+      
+      <div class="jumbotron jumbotron-fluid text-center fg-3">
+         <h1>Who is Pek?</h1>
+         <div class="mx-auto d-block">
+            <img class="rounded" src="images/pekproject.PNG"/>
+         </div>
+         <p>Pek is a comic-character tiny flea that casually travels around the globe looking for adventures and culture in new countries.</p>
+         <p>He even travels in time!</p>
+         <button type="button" class="btn btn-primary rounded" href="https://twinspace.etwinning.net/122873">Go to Pek's Project</button>
+      </div>
+
+      <div style="height: 100px"></div>
+
+      <section class="section fg-2">
+         <div class="text-center">
+            <h1 class="font-weight-bold mb-4 font-size-60">PEK'S JOURNEYS</h1>
+            <p class="mb-4">Here you can see the adventures of pek in each continent</p>
+         </div>
+         <div class="container text-center">
+            <!-- class="img-fluid" -->
+            <img class="img-fluid" src="images/mapa.png"usemap="#image-map">
+           <map name="image-map">
+    <area target="_blank" alt="santiago" title="santiago" href="santiago.html" coords="47,309,55,291,58,281,51,272,40,271,33,281,45,309,47,309" shape="poly">
+    <area target="_blank" alt="paris" title="paris" href="paris.html" coords="145,282,153,267,159,251,150,242,138,244,133,256" shape="poly">
+    <area target="_blank" alt="venice" title="venice" href="venice.html" coords="218,320,233,296,227,283,210,283,207,296" shape="poly">
+    <area target="_blank" alt="roma" title="roma" href="rome.html" coords="220,367,234,342,227,328,212,329,207,339" shape="poly">
+    <area target="_blank" alt="bcn" title="bcn" href="barcelona.html" coords="108,353,121,327,116,312,103,315,95,325" shape="poly">
+    <area target="_blank" alt="london" title="london" href="london.html" coords="136,238,150,213,144,200,131,200,124,212" shape="poly">
+</map>
+            <h1 id="continent"> Select a city to travel to ! </h1>
+         </div>
+      </section>
+      <!--<div class="bg"></div>-->
+      <!--
+         <div class="row mt-100">
+             <div class="col-md-12 text-center">
+                 <a href="" class="btn btn-main">Grab You Product Now</a>
+             </div>
+         </div>
+         -->
+
+      <div style="height: 100px"></div>
+
+      <div snippet="footer.html" class="mt-5"></div>
+      <!-- Importing Scripts -->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <!-- Para snippets (navbar y footer) -->
+      <script src="js/includeHTML.js"></script>
+      <script type="text/javascript">
+         // ESTO ESTÁ EN FASE DE PRUEBAS
+         /*
+         $(document).ready(function () {
+             var url = window.location;
+             
+             $('ul.nav a[href="'+ url +'"]').parent().addClass('active');
+             $('ul.nav a').filter(function() {
+                 return this.href == url;
+             }).parent().addClass('active');
+             
+         });
+         
+         var menuid = "menu-dashboard";
+         $(function() {
+             $('.nav li').removeClass('active');
+             $(menuid).addClass("active");
+         });*/
+         
+      </script> <!-- fin script dinamic active navbar item -->
+      <!-- Test map image responsive -->
+      <script src="js/jquery.rwdImageMaps.js"></script>
+      <script>
+         $('img[usemap]').rwdImageMaps();
+      </script> 
+      <script>
+         $(document).ready(function(e) {
+           $('img[usemap]').rwdImageMaps();
+         });
+      </script>
+   </body>
+
+
+</html>
